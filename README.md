@@ -1,9 +1,9 @@
-# VBA Challenge - All Stocks
-Module 2
+# VBA Challenge - All Stocks Analysis (Refactored)
 
 ## Overview of Project
 
-### Purpose:
+### Purpose
+Steve wanted a way to run analysis that would include the entire stock market over the last few years. The years provided were 2017 and 2018, separated into their own tabs. The development of this refactored VBA script needed to be able to handle a large amount of data for any year, including the two provided for the entire stock market.
 
 ## Results
 
