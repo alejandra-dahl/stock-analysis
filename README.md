@@ -6,10 +6,13 @@
 Steve wanted a way to run analysis that would include the entire stock market over the last few years. The years provided were 2017 and 2018, separated into their own tabs. The development of this refactored VBA script needed to be able to handle a large amount of data for any year, including the two provided for the entire stock market.
 
 ## Results
-The VBA code created allows Steve to see the total daily volume and percent return for each stock (ticker) all on a separate tab in the workbook. Each stock was assigned a ticker in an array. 
+The VBA code created allows Steve to see the total daily volume and percent return for each stock (ticker) all on a separate tab in the workbook. Each stock was assigned a ticker in an array. The code will run in a loop and assign each stock a ticker. 
+>For Example
 
-`<addr>`
+    tickers(0) = "AY"
 
+    tickers(1) = "CSIQ"
+    
 
 **2017**
 
