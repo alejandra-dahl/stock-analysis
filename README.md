@@ -6,14 +6,35 @@
 Steve wanted a way to run analysis that would include the entire stock market over the last few years. The years provided were 2017 and 2018, separated into their own tabs. The development of this refactored VBA script needed to be able to handle a large amount of data for any year, including the two provided for the entire stock market.
 
 ## Results
-The VBA code created allows Steve to see the total daily volume and percent return for each stock (ticker) all on a separate tab in the workbook. Each stock was assigned a ticker in an array. The code will run in a loop and assign each stock a ticker. 
+The VBA code created allows Steve to see the total daily volume and percent return for each stock (ticker) all on a separate tab in the workbook. A ticker index and three output arrays were created. When the code runs, the ticker index will increase if the next row's ticker doesn't match.
+
 >For Example
 
-    tickers(0) = "AY"
+    For i = 0 To 11
+        tickerIndex = tickers(i)
 
-    tickers(1) = "CSIQ"
+    Dim tickerVolumes As Long
+    Dim tickerStartingPrices As Single, tickerEndingPrices As Single
  
-The macro then needs to find the total volume of each ticker by finding the starting price and end current ending price. It will also format the percent return by highlighting it green for positive and red for negative.
+A similar process happens for volume. The macro then needs to find the total volume of each ticker by finding the starting price and end current ending price. 
+
+        Worksheets(yearValue).Activate
+        tickerVolumes = 0
+
+        For j = 2 To RowCount
+    
+        If Cells(j, 1).Value = tickerIndex Then
+
+            tickerVolumes = tickerVolumes + Cells(j, 8).Value
+            
+        End If
+        
+          If Cells(j + 1, 1).Value <> tickerIndex And Cells(j, 1).Value = tickerIndex Then
+
+            tickerEndingPrices = Cells(j, 6).Value
+
+
+It will also format the percent return by highlighting it green for positive and red for negative.
 
 Buttons were installed so that Steve or his parents can easily run the analysis on any tab year that they would like.
 
