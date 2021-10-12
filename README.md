@@ -34,7 +34,16 @@ A similar process happens for volume. The macro then needs to find the total vol
             tickerEndingPrices = Cells(j, 6).Value
 
 
+It will loop through the arrays to output the **Ticker**, **Total Daily Volume**, and **Return**. 
+        Worksheets("All Stocks Analysis").Activate
+        
+        Cells(4 + i, 1).Value = tickerIndex
+        Cells(4 + i, 2).Value = tickerVolumes
+        Cells(4 + i, 3).Value = tickerEndingPrices / tickerStartingPrices - 1
+
+
 It will also format the percent return by highlighting it green for positive and red for negative.
+
 
 Buttons were installed so that Steve or his parents can easily run the analysis on any tab year that they would like.
 
