@@ -47,17 +47,17 @@ Buttons were installed so that Steve or his parents can easily run the analysis 
 
 Running the macro will result in images similar to what is seen below.
 
-**2017**
+>**2017**\
 It's easy to see that TERP was the only stock that had a negative return that year. The macro was also able to run in 0.93 seconds.
 
-![VBA_Challenge_2017](https://user-images.githubusercontent.com/90485451/136884848-0533865c-c543-4037-8654-952b86b226c0.png)
+   ![VBA_Challenge_2017](https://user-images.githubusercontent.com/90485451/136884848-0533865c-c543-4037-8654-952b86b226c0.png)
 
 
 
-**2018**
+>**2018**\
 ENPH and RUN were the only stocks in 2018 with a positive return. The macro was also able to run in 0.87 seconds.
 
-![VBA_Challenge_2018](https://user-images.githubusercontent.com/90485451/136884808-4cf3f2ff-10d9-405e-b2dc-3046661fc92c.png)
+   ![VBA_Challenge_2018](https://user-images.githubusercontent.com/90485451/136884808-4cf3f2ff-10d9-405e-b2dc-3046661fc92c.png)
 
 
 
