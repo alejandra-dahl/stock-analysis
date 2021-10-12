@@ -12,7 +12,12 @@ The VBA code created allows Steve to see the total daily volume and percent retu
     tickers(0) = "AY"
 
     tickers(1) = "CSIQ"
-    
+ 
+The macro then needs to find the total volume of each ticker by finding the starting price and end current ending price. It will also format the percent return by highlighting it green for positive and red for negative.
+
+Buttons were installed so that Steve or his parents can easily run the analysis on any tab year that they would like.
+
+Running the macro will result in images similar to what is seen below.
 
 **2017**
 
